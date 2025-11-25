@@ -1,58 +1,229 @@
-<h1 id="terms-and-conditions">Terms and Conditions</h1>
-<p><strong>Effective Date:</strong> 29 October, 2025</p>
-<p>These Terms and Conditions (&quot;Terms&quot;) govern your use of the CCFrederick mobile application (&quot;the App&quot;). By accessing or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
-<hr>
-<h2 id="1-use-of-the-app">1. Use of the App</h2>
-<ul>
-<li>The App is provided for the benefit of church members, guests, and volunteers.</li>
-<li>You may not use the App for any unlawful or unauthorized purpose.</li>
-<li>You agree not to interfere with or disrupt the operation of the App.</li>
-</ul>
-<hr>
-<h2 id="2-user-accounts">2. User Accounts</h2>
-<ul>
-<li>Some features require you to register an account using your name and email address.</li>
-<li>You are responsible for maintaining the confidentiality of your login credentials.</li>
-<li>You agree to provide accurate information and to keep it updated.</li>
-</ul>
-<hr>
-<h2 id="3-content-ownership-and-usage">3. Content Ownership and Usage</h2>
-<ul>
-<li>You retain ownership of any content you submit to the App (e.g., messages, prayer requests).</li>
-<li>By submitting content, you grant Center Church Frederick a non-exclusive, royalty-free license to use, display, and distribute that content within the context of the App.</li>
-<li>You may not submit content that is unlawful, abusive, or violates the rights of others.</li>
-</ul>
-<hr>
-<h2 id="4-privacy">4. Privacy</h2>
-<p>Your use of the App is also governed by our <a href="https://privacy-policy.ccfapp.com">Privacy Policy</a>, which outlines how we collect and use your data.</p>
-<hr>
-<h2 id="5-modifications-to-the-app">5. Modifications to the App</h2>
-<p>We may update or modify the App at any time, with or without notice. We are not liable if any part of the App is unavailable at any time.</p>
-<hr>
-<h2 id="6-termination">6. Termination</h2>
-<p>We reserve the right to suspend or terminate your access to the App if you violate these Terms or misuse the App.</p>
-<hr>
-<h2 id="7-limitation-of-liability">7. Limitation of Liability</h2>
-<p>The App is provided &quot;as is&quot; without warranties of any kind. Center Church Frederick is not liable for any damages arising from your use of the App.</p>
-<hr>
-<h2 id="8-indemnification">8. Indemnification</h2>
-<p>You agree to indemnify and hold harmless Center Church Frederick from any claims, damages, or expenses arising from your use of the App or your violation of these Terms.</p>
-<hr>
-<h2 id="9-governing-law">9. Governing Law</h2>
-<p>These Terms are governed by the laws of the State of Maryland, United States, without regard to its conflict of law provisions.</p>
-<hr>
-<h2 id="10-contact-us">10. Contact Us</h2>
-<p>If you have questions about these Terms, please contact us:</p>
-<p><strong>Center Church Frederick</strong><br>Email: ccfapp.centerchurch@gmail.com<br>Website: <a href="https://centrocristianofrederick.com">https://centrocristianofrederick.com</a></p>
-<hr>
-<h2 id="11-age-restrictions">11. Age Restrictions</h2>
-<p>The App is intended for use by individuals aged 13 and older. Children under 13 may only use the App through parent or guardian supervision and profile creation. If we become aware of unauthorized use by a minor, we may take steps to remove their account or content.</p>
-<hr>
-<h2 id="12-community-and-user-content">12. Community and User Content</h2>
-<p>We are not responsible for content posted by users in groups, messages, or prayer requests. While we may moderate reported content, we do not guarantee the accuracy, appropriateness, or safety of user-generated material.</p>
-<hr>
-<h2 id="13-updates-to-these-terms">13. Updates to These Terms</h2>
-<p>We may update these Terms occasionally to reflect changes in the App or legal requirements. When we do, we will post the updated version in the App. Continued use of the App after any updates constitutes acceptance of the new Terms.</p>
-<hr>
-<p><strong>Last Updated:</strong> 29 October, 2025</p>
-<p>By using this App, you acknowledge and agree to these Terms and Conditions.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions / Términos y Condiciones</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Language Toggle Styling */
+        .language-toggle {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .lang-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        .lang-btn.active {
+            background-color: #0056b3; /* Brand color */
+            color: white;
+            border-color: #0056b3;
+        }
+
+        /* Utility to hide content */
+        .hidden {
+            display: none;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="language-toggle">
+        <button id="btn-en" class="lang-btn active" onclick="setLanguage('en')">English</button>
+        <button id="btn-es" class="lang-btn" onclick="setLanguage('es')">Español</button>
+    </div>
+
+    <div id="content-en">
+        <h1 id="terms-and-conditions">Terms and Conditions</h1>
+        <p><strong>Effective Date:</strong> 29 October, 2025</p>
+        <p>These Terms and Conditions ("Terms") govern your use of the CCFrederick mobile application ("the App"). By accessing or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+        <hr>
+        <h2 id="1-use-of-the-app">1. Use of the App</h2>
+        <ul>
+        <li>The App is provided for the benefit of church members, guests, and volunteers.</li>
+        <li>You may not use the App for any unlawful or unauthorized purpose.</li>
+        <li>You agree not to interfere with or disrupt the operation of the App.</li>
+        </ul>
+        <hr>
+        <h2 id="2-user-accounts">2. User Accounts</h2>
+        <ul>
+        <li>Some features require you to register an account using your name and email address.</li>
+        <li>You are responsible for maintaining the confidentiality of your login credentials.</li>
+        <li>You agree to provide accurate information and to keep it updated.</li>
+        </ul>
+        <hr>
+        <h2 id="3-content-ownership-and-usage">3. Content Ownership and Usage</h2>
+        <ul>
+        <li>You retain ownership of any content you submit to the App (e.g., messages, prayer requests).</li>
+        <li>By submitting content, you grant Center Church Frederick a non-exclusive, royalty-free license to use, display, and distribute that content within the context of the App.</li>
+        <li>You may not submit content that is unlawful, abusive, or violates the rights of others.</li>
+        </ul>
+        <hr>
+        <h2 id="4-privacy">4. Privacy</h2>
+        <p>Your use of the App is also governed by our <a href="https://privacy-policy.ccfapp.com">Privacy Policy</a>, which outlines how we collect and use your data.</p>
+        <hr>
+        <h2 id="5-modifications-to-the-app">5. Modifications to the App</h2>
+        <p>We may update or modify the App at any time, with or without notice. We are not liable if any part of the App is unavailable at any time.</p>
+        <hr>
+        <h2 id="6-termination">6. Termination</h2>
+        <p>We reserve the right to suspend or terminate your access to the App if you violate these Terms or misuse the App.</p>
+        <hr>
+        <h2 id="7-limitation-of-liability">7. Limitation of Liability</h2>
+        <p>The App is provided "as is" without warranties of any kind. Center Church Frederick is not liable for any damages arising from your use of the App.</p>
+        <hr>
+        <h2 id="8-indemnification">8. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Center Church Frederick from any claims, damages, or expenses arising from your use of the App or your violation of these Terms.</p>
+        <hr>
+        <h2 id="9-governing-law">9. Governing Law</h2>
+        <p>These Terms are governed by the laws of the State of Maryland, United States, without regard to its conflict of law provisions.</p>
+        <hr>
+        <h2 id="10-contact-us">10. Contact Us</h2>
+        <p>If you have questions about these Terms, please contact us:</p>
+        <p><strong>Center Church Frederick</strong><br>Email: ccfapp.centerchurch@gmail.com<br>Website: <a href="https://centrocristianofrederick.com">https://centrocristianofrederick.com</a></p>
+        <hr>
+        <h2 id="11-age-restrictions">11. Age Restrictions</h2>
+        <p>The App is intended for use by individuals aged 13 and older. Children under 13 may only use the App through parent or guardian supervision and profile creation. If we become aware of unauthorized use by a minor, we may take steps to remove their account or content.</p>
+        <hr>
+        <h2 id="12-community-and-user-content">12. Community and User Content</h2>
+        <p>We are not responsible for content posted by users in groups, messages, or prayer requests. While we may moderate reported content, we do not guarantee the accuracy, appropriateness, or safety of user-generated material.</p>
+        <hr>
+        <h2 id="13-updates-to-these-terms">13. Updates to These Terms</h2>
+        <p>We may update these Terms occasionally to reflect changes in the App or legal requirements. When we do, we will post the updated version in the App. Continued use of the App after any updates constitutes acceptance of the new Terms.</p>
+        <hr>
+        <p><strong>Last Updated:</strong> 29 October, 2025</p>
+        <p>By using this App, you acknowledge and agree to these Terms and Conditions.</p>
+    </div>
+
+    <div id="content-es" class="hidden">
+        <h1 id="terms-and-conditions-es">Términos y Condiciones</h1>
+        <p><strong>Fecha de vigencia:</strong> 29 de octubre de 2025</p>
+        <p>Estos Términos y Condiciones ("Términos") rigen su uso de la aplicación móvil CCFrederick ("la App"). Al acceder o utilizar la App, usted acepta estar sujeto a estos Términos. Si no está de acuerdo, no utilice la App.</p>
+        <hr>
+        <h2 id="1-use-of-the-app-es">1. Uso de la App</h2>
+        <ul>
+        <li>La App se proporciona para el beneficio de los miembros de la iglesia, invitados y voluntarios.</li>
+        <li>Usted no puede utilizar la App para ningún propósito ilegal o no autorizado.</li>
+        <li>Usted acepta no interferir ni interrumpir el funcionamiento de la App.</li>
+        </ul>
+        <hr>
+        <h2 id="2-user-accounts-es">2. Cuentas de Usuario</h2>
+        <ul>
+        <li>Algunas funciones requieren que registre una cuenta utilizando su nombre y dirección de correo electrónico.</li>
+        <li>Usted es responsable de mantener la confidencialidad de sus credenciales de inicio de sesión.</li>
+        <li>Usted acepta proporcionar información precisa y mantenerla actualizada.</li>
+        </ul>
+        <hr>
+        <h2 id="3-content-ownership-and-usage-es">3. Propiedad y Uso del Contenido</h2>
+        <ul>
+        <li>Usted conserva la propiedad de cualquier contenido que envíe a la App (por ejemplo, mensajes, peticiones de oración).</li>
+        <li>Al enviar contenido, usted otorga a Center Church Frederick una licencia no exclusiva y libre de regalías para usar, mostrar y distribuir ese contenido dentro del contexto de la App.</li>
+        <li>Usted no puede enviar contenido que sea ilegal, abusivo o que viole los derechos de otros.</li>
+        </ul>
+        <hr>
+        <h2 id="4-privacy-es">4. Privacidad</h2>
+        <p>Su uso de la App también se rige por nuestra <a href="https://privacy-policy.ccfapp.com">Política de Privacidad</a>, que describe cómo recopilamos y usamos sus datos.</p>
+        <hr>
+        <h2 id="5-modifications-to-the-app-es">5. Modificaciones a la App</h2>
+        <p>Podemos actualizar o modificar la App en cualquier momento, con o sin previo aviso. No somos responsables si alguna parte de la App no está disponible en algún momento.</p>
+        <hr>
+        <h2 id="6-termination-es">6. Terminación</h2>
+        <p>Nos reservamos el derecho de suspender o terminar su acceso a la App si viola estos Términos o hace un mal uso de la App.</p>
+        <hr>
+        <h2 id="7-limitation-of-liability-es">7. Limitación de Responsabilidad</h2>
+        <p>La App se proporciona "tal cual" sin garantías de ningún tipo. Center Church Frederick no es responsable de ningún daño que surja de su uso de la App.</p>
+        <hr>
+        <h2 id="8-indemnification-es">8. Indemnización</h2>
+        <p>Usted acepta indemnizar y mantener indemne a Center Church Frederick de cualquier reclamo, daño o gasto que surja de su uso de la App o de su violación de estos Términos.</p>
+        <hr>
+        <h2 id="9-governing-law-es">9. Ley Aplicable</h2>
+        <p>Estos Términos se rigen por las leyes del Estado de Maryland, Estados Unidos, sin tener en cuenta sus disposiciones sobre conflictos de leyes.</p>
+        <hr>
+        <h2 id="10-contact-us-es">10. Contáctenos</h2>
+        <p>Si tiene preguntas sobre estos Términos, por favor contáctenos:</p>
+        <p><strong>Center Church Frederick</strong><br>Correo electrónico: ccfapp.centerchurch@gmail.com<br>Sitio web: <a href="https://centrocristianofrederick.com">https://centrocristianofrederick.com</a></p>
+        <hr>
+        <h2 id="11-age-restrictions-es">11. Restricciones de Edad</h2>
+        <p>La App está destinada para el uso de personas mayores de 13 años. Los niños menores de 13 años solo pueden usar la App a través de la supervisión de un padre o tutor y la creación de un perfil. Si nos damos cuenta de un uso no autorizado por parte de un menor, podemos tomar medidas para eliminar su cuenta o contenido.</p>
+        <hr>
+        <h2 id="12-community-and-user-content-es">12. Comunidad y Contenido del Usuario</h2>
+        <p>No somos responsables del contenido publicado por los usuarios en grupos, mensajes o peticiones de oración. Si bien podemos moderar el contenido reportado, no garantizamos la exactitud, idoneidad o seguridad del material generado por el usuario.</p>
+        <hr>
+        <h2 id="13-updates-to-these-terms-es">13. Actualizaciones de estos Términos</h2>
+        <p>Podemos actualizar estos Términos ocasionalmente para reflejar cambios en la App o requisitos legales. Cuando lo hagamos, publicaremos la versión actualizada en la App. El uso continuo de la App después de cualquier actualización constituye la aceptación de los nuevos Términos.</p>
+        <hr>
+        <p><strong>Última actualización:</strong> 29 de octubre de 2025</p>
+        <p>Al usar esta App, usted reconoce y acepta estos Términos y Condiciones.</p>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            const contentEn = document.getElementById('content-en');
+            const contentEs = document.getElementById('content-es');
+            const btnEn = document.getElementById('btn-en');
+            const btnEs = document.getElementById('btn-es');
+
+            if (lang === 'es') {
+                contentEn.classList.add('hidden');
+                contentEs.classList.remove('hidden');
+                btnEn.classList.remove('active');
+                btnEs.classList.add('active');
+                document.documentElement.lang = 'es';
+            } else {
+                contentEs.classList.add('hidden');
+                contentEn.classList.remove('hidden');
+                btnEs.classList.remove('active');
+                btnEn.classList.add('active');
+                document.documentElement.lang = 'en';
+            }
+
+            // Save preference to local storage so it persists across pages
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Check for saved preference on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang) {
+                setLanguage(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
